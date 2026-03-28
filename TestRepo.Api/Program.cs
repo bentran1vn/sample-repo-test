@@ -6,10 +6,8 @@ using JwtService = TestRepo.Service.JwtService;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -25,6 +23,13 @@ builder.Services.AddSwaggerServices();
 builder.Services.AddScoped<JwtService.IService, JwtService.Service>();
 
 builder.Services.AddTransient<GlobalExceptionHandlerMiddleware>();
+
+// Cuộc đời là một chuỗi các sự kiện,
+    // và chúng ta chỉ là những người diễn viên trong đó.
+// Hãy sống hết mình và tận hưởng từng khoảnh khắc!
+
+// Không ai mong các em pass và thành công hơn chính anh
+    // Vậy nên hãy cố gắng trở thành phiên bản tốt nhất nhé
 
 var app = builder.Build();
 
