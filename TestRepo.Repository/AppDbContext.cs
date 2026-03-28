@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace TetPee.Repository;
+namespace TestRepo.Repository;
 
 public class AppDbContext : DbContext
 {

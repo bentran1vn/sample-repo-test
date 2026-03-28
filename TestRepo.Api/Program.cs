@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using TestRepo.Api.Extensions;
 using TestRepo.Api.Middlewares;
-using TetPee.Repository;
-using JwtService = TetPee.Service.JwtService;
+using TestRepo.Repository;
+using JwtService = TestRepo.Service.JwtService;
 
 var builder = WebApplication.CreateBuilder(args);
 
